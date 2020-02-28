@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
   });
 });
-// $(window).scroll(function () {
+
 $('.count').each(function () {
   $(this).prop('Counter',0).animate({
       Counter: $(this).text()
@@ -33,7 +33,7 @@ $('.count').each(function () {
       }
   });
 });
-// });
+
 
 $(document).ready(function() {
   $(".tab").click(function () {
@@ -76,6 +76,21 @@ $(document).ready(function() {
     });
 
 }); 
+/* Scroll Down Start  */
+$(document).ready(function(){
+  $(".ct-btn-scroll").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+/* Scroll Down end */
 $(document).ready(function () {
   $('.owl-two').owlCarousel({
     items:1,
