@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
   });
 });
-// $(window).scroll(function () {
+
 $('.count').each(function () {
   $(this).prop('Counter',0).animate({
       Counter: $(this).text()
@@ -33,7 +33,7 @@ $('.count').each(function () {
       }
   });
 });
-// });
+
 
 $(document).ready(function() {
   $(".tab").click(function () {
@@ -57,26 +57,41 @@ $(window).scroll(function () {
   }
 });
 
-      window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-         function scrollFunction() {
-           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-             document.getElementById("scroll_btn").style.display = "block";
-           } else {
-             document.getElementById("scroll_btn").style.display = "none";
-           }
-         }
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll_btn").style.display = "block";
+  } else {
+    document.getElementById("scroll_btn").style.display = "none";
+  }
+}
 
-         // When the user clicks on the button, scroll to the top of the document
-         $(document).ready(function() {
-             $("#scroll_btn").click(function(event) {
-                 event.preventDefault();
-                 $("html, body").animate({ scrollTop: 0 }, "slow");
-                 return false;
-             });
+// When the user clicks on the button, scroll to the top of the document
+$(document).ready(function() {
+    $("#scroll_btn").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
 
-         }); 
-
+}); 
+/* Scroll Down Start  */
+$(document).ready(function(){
+  $(".ct-btn-scroll").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+/* Scroll Down end */
+$(document).ready(function () {
   $('.owl-two').owlCarousel({
     items:1,
     margin:30,
@@ -87,8 +102,7 @@ $(window).scroll(function () {
     nav:false,
     dots: true
 });
-
-
+});
 
 // login and registor 
 
@@ -213,3 +227,5 @@ return false;
 }
 
 }
+
+

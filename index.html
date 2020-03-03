@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -5,16 +6,14 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title> IT Training Center</title>
-      <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+      <!-- <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-      <!-- <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js"> -->
-
-     
+    
       <link rel="stylesheet" href="./css/bootstrap.css">
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" type="text/css" href="./css/style.css">
    </head>
-   <body>
+   <body  data-spy="scroll" data-target=".navbar" data-offset="50">
       <button id="scroll_btn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
       <header id="Home">
          <div class="header_top_bg">
@@ -23,7 +22,7 @@
                   <ul class="header_top_left">
                      <li><i class="fa fa-map-marker header_icon" aria-hidden="true"></i> 12 Royal Street, California USA</li>
                      <li><i class="fa fa-phone header_icon" aria-hidden="true"></i> 001-122-134-555</li>
-                     <li><a href="mailto:info@marchandmartin.com" title="mailto:info@marchandmartin.com"><i class="fa fa-envelope header_3" aria-hidden="true"></i> contact@domain.com</a></li>
+                     <li><a href="mailto:info@marchandmartin.com" title="mailto:info@marchandmartin.com"><i class="fa fa-envelope header_3" aria-hidden="true"></i> info@marchandmartin.com </a></li>
                   </ul> 
                   <div class="m_header_top_left"><p><i class="fa fa-phone header_icon" aria-hidden="true"></i> 001-122-134-555</p></div>               
                   <ul class="header_top_right">
@@ -54,9 +53,10 @@
                  <ul class="menu overlay-content " >               
                       <li class="active tab"><a href="#Home" title="Home">Home</a></li>
                       <li class="tab"><a href="#About" title="About">About</a></li>
-                      <li class="tab"><a href="#Services" title="Services">Services</a></li>
-                      <li class="tab"><a href="#Project" title="Project Gallery">Gallery</a></li>
-                      <li class="tab"><a href="#Blog" title="Blog">Blog</a></li>
+                      <li class="tab"><a href="#SERVICES" title="Project Gallery">SERVICES</a></li>
+                      <li class="tab"><a href="#Technology" title="Services">Technology</a></li>
+                      
+                      <li class="tab"><a href="#WORKSHOP" title="Blog">WORKSHOP</a></li>
                       <li class="tab"><a href="#Contact" title="Contact Us">Contact</a></li>
                  </ul>
                <div class="hover_header_top">                
@@ -88,58 +88,18 @@
                      <p>To Succeed in life and achieve results you must understand
                         Desire , Belief and Expectation !!.</p>
                     
-                     <a href="login.html" title="Request a FREE Estimate" class="banner_btn">Sig in</a>
-                     <a href="register.html" title="Request a FREE Estimate" class="banner_btn">Sign Up</a>
+                        <a href="login.html" title="Request a FREE Estimate" class="banner_btn">Sig in</a>
+                        <a href="register.html" title="Request a FREE Estimate" class="banner_btn">Sign Up</a>
+                   
                   </div>
                </div>
               
               
          </div>
+         <a href="#About" class="ct-btn-scroll" title="Scroll"> <img src="./img/Scroll.png" alt="Scroll"  ></a>
       </section>
-      <div id="section2" class="functionality-bg">
-         <h2>Provided <span>functionality</span></h2>
-         <div class="container">
-          <div class="row">
-             <div class="col-md-3">
-                <div class="functionality-bx">
-                   <div class="functionality-icon">
-                   <img src="./img/online-traning.png" alt="">
-                  </div>
-                   <h4>Online Classes</h4>
-               <p>Live Interactive Online session with your Instructor</p>
-            </div>
-             </div>
-             <div class="col-md-3">
-               <div class="functionality-bx">
-                  <div class="functionality-icon">
-                     <img src="./img/online-traning.png" alt="">
-                    </div>
-               <h4>Learn from IT-SuccessWin</h4>
-               <p>Learn from Professionally trained Experts</p>
-               </div>
-             </div>
-             <div class="col-md-3">
-               <div class="functionality-bx">
-                  <div class="functionality-icon">
-                     <img src="./img/online-traning.png" alt="">
-                    </div>
-                <h4>Flexible Timings</h4>
-                <p>Schedule your Class at Your Convenient Time</p>
-                </div>
-             </div>
-             <div class="col-md-3">
-               <div class="functionality-bx">
-                  <div class="functionality-icon">
-                     <img src="./img/online-traning.png" alt="">
-                    </div>
-                <h4>24x7 Support</h4>
-                <p>24x7 On-Demand Support</p>
-                </div>
-             </div>
-          </div>
-         </div>
-      </div>
-  <div class="About">
+
+  <div class="About" id="About">
      <div class="container">
       <div class="row">
          <div class="col-xs-12 col-sm-7 ">
@@ -159,7 +119,50 @@
        </div>
      </div>
   </div>
-  <section class="Commitment_bg">
+  <div id="section2" class="functionality-bg">
+   <h2>Provided <span>functionality</span></h2>
+   <div class="container">
+    <div class="row">
+       <div class="col-md-3">
+          <div class="functionality-bx">
+             <div class="functionality-icon">
+             <img src="./img/online-traning.png" alt="">
+            </div>
+             <h4>Online Classes</h4>
+         <p>Live Interactive Online session with your Instructor</p>
+      </div>
+       </div>
+       <div class="col-md-3">
+         <div class="functionality-bx">
+            <div class="functionality-icon">
+               <img src="./img/online-traning.png" alt="">
+              </div>
+         <h4>Learn from IT-SuccessWin</h4>
+         <p>Learn from Professionally trained Experts</p>
+         </div>
+       </div>
+       <div class="col-md-3">
+         <div class="functionality-bx">
+            <div class="functionality-icon">
+               <img src="./img/online-traning.png" alt="">
+              </div>
+          <h4>Flexible Timings</h4>
+          <p>Schedule your Class at Your Convenient Time</p>
+          </div>
+       </div>
+       <div class="col-md-3">
+         <div class="functionality-bx">
+            <div class="functionality-icon">
+               <img src="./img/online-traning.png" alt="">
+              </div>
+          <h4>24x7 Support</h4>
+          <p>24x7 On-Demand Support</p>
+          </div>
+       </div>
+    </div>
+   </div>
+</div>
+  <section class="Commitment_bg" id="SERVICES">
    <div class="container">
       <h2>Our Services</h2>
       <div class="box_model">
@@ -196,6 +199,146 @@
          </div>
       </div>
 </section>
+<section class="subject" id="Technology">
+   <img src="./img/education-bg.png" alt="" class="doted-bg">
+   <h2 class="sub-m-tit">Our Traning <span>Technology</span></h2>
+   <div class="container">
+      <div class="row subject-bx">
+         <div class="col-md-3 col-sm-6">
+            <a href="#" title="Angular">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/angular.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Angular 8</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <a href="#">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/bootstrap.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Bootstrap</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <a href="#">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/Python.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Python</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <a href="#" title="Angular">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/angular.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Angular 8</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-3 col-sm-6">
+            <a href="#">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/Python.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Python</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <a href="#">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/online-traning.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Angular 8</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <a href="#" title="Angular">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/angular.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Angular 8</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <a href="#">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <img src="./img/bootstrap.png" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <h3>Bootstrap</h3> 
+                      <p>See Full cource</p> 
+                    
+                    </div>
+                  </div>
+                </div>
+                </a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
 <div class="container">
    <div class="total_events">
       <div class="events_box" data-aos="fade-right" data-aos-duration="1200">
@@ -229,7 +372,7 @@
    </div>
 </div>
 <!-- upcoming events start-->
-<div class="upcoming-bg">
+<div class="upcoming-bg" id="WORKSHOP">
    <h2 class="upcoming-m-tit">UPCOMING WORKSHOP <span>FOR FREE</span></h2>
    <div class="container">
       <div class="row">
@@ -301,7 +444,7 @@
 </div>
 </div>
 <!-- carousel slider end -->
-<div class="chat_form-bg">
+<div class="chat_form-bg" id="Contact">
    <div class="container">
       <div class="chat-form">
          <h2>LETS GET STARTED</h2>
@@ -332,11 +475,12 @@
       <div class="footer_main">
          <div class="footer_col1" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="linear">
             <div class="f_logo">
-               <img src="./img/header_logo.png" alt="Footer Logo">
+               <!-- <img src="./img/header_logo.png" alt="Footer Logo"> -->
+               IT Training <span>Center</span>
             </div>
             <div class="call">(978) 532-3224</div>
             <address>16 Winter Street, Peabody, MA 01960</address>
-            <a href="mailto:info@marchandmartin.com" title="mailto:info@marchandmartin.com" class="mailto">info@marchandmartin.com</a>
+            <a href="mailto:info@marchandmartin.com " title="mailto:info@marchandmartin.com " class="mailto">info@marchandmartin.com </a>
             <div class="social">
                <span><a href="#" title="Facebook"> <img src="./img/1.png" alt="Facebook"> </a></span>
                <span><a href="#" title="Twitter"> <img src="./img/2.png" alt="Twitter"> </a></span>
@@ -347,19 +491,18 @@
             <h3>Quick Links</h3>
             <ul class="f_link">
                <li><a href="" title="About Us">About Us</a></li>
-               <li><a href="" title="Resources">Resources</a></li>
-               <li><a href="" title="Testimonials">Testimonials</a></li>
-               <li><a href="" title="Project Gallery">Project Gallery</a></li>
-               <li><a href="" title="FAQs">FAQs</a></li>
+               <li><a href="" title="Resources">SERVICES</a></li>
+               <li><a href="" title="Testimonials">Technology</a></li>
+               <li><a href="" title="Project Gallery">WORKSHOP</a></li>
+               <li><a href="" title="FAQs">CONTACT</a></li>
             </ul>
          </div>
          <div data-aos="fade-left" data-aos-duration="1200" data-aos-easing="linear">
             <h3>Services</h3>
             <ul class="f_link">
-               <li><a href="" title="Icynene Insulation">Icynene Insulation</a></li>
-               <li><a href="" title="Traditional Closed Cell Polyurethane">Traditional Closed Cell Polyurethane </a></li>
-               <li><a href="" title="Thermal & Ignition Barrier">Thermal & Ignition Barrier</a></li>
-               <li><a href="" title="Infrared Thermography">Infrared Thermography</a></li>
+               <li><a href="" title="Icynene Insulation">Online Training</a></li>
+               <li><a href="" title="Traditional Closed Cell Polyurethane">Job Support & Project Training</a></li>
+               <li><a href="" title="Infrared Thermography">Corporate Training</a></li>
             </ul>
          </div>
          <div class="Recent_Blogs" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="linear">
@@ -379,15 +522,6 @@
       <div class="footer_end" >
          <div class="copyright">
             <p>IT Training &copy; 2020 All Rights Reserved.</p>
-         </div>
-         <div>
-            <ul class="product">
-               <li><a href="#" title="The lcynono insulation System"> <img src="./img/product.png" alt="ttt"></a></li>
-               <li><a href="#" title="Product Logo"> <img src="./img/prodct1.png" alt="Product Logo"></a></li>
-               <li><a href="#" title="Product Logo"> <img src="./img/prodct2.png" alt="Product Logo"></a></li>
-               <li><a href="#" title="Product Logo"> <img src="./img/prodct3.png" alt="Product Logo"></a></li>
-               <li><a href="#" title="Product Logo"> <img src="./img/prodct4.png" alt="Product Logo"></a></li>
-            </ul>
          </div>
       </div>
    </div>
