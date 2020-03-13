@@ -103,7 +103,6 @@ $(document).ready(function () {
     dots: true
 });
 });
-
 // login and registor 
 
 // Login Page
@@ -125,11 +124,7 @@ cpassmsg.classList.remove("valid");
 cpassmsg.classList.add("invalid");
 }
 }
-// }; if(cpassmsg.classList == "valid"){
-//   document.getElementById("messageCpass").style.display = "none";
-// }else{
-//   document.getElementById("messageCpass").style.display = "block";
-// }
+
 
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
@@ -171,11 +166,18 @@ length.classList.remove("valid");
 length.classList.add("invalid");
 }
 }
+
 // if(length.classList == "valid"){
-//     document.getElementById("message").style.display = "none";
-//   }else{
-//     document.getElementById("message").style.display = "block";
-//   }
+//   document.getElementById("message").style.display = "none";
+// }else{
+//   document.getElementById("message").style.display = "block";
+// }
+
+// if(cpassmsg.classList == "valid"){
+//   document.getElementById("messageCpass").style.display = "none";
+// }else{
+//   document.getElementById("messageCpass").style.display = "block";
+// }
 
 
 // Register Page
@@ -225,7 +227,6 @@ document.getElementById('mobileerror').innerHTML = "";
 document.getElementById('mobileerror').innerHTML = "**Please enter your Mobile no";
 return false;
 }
-
 }
 
 

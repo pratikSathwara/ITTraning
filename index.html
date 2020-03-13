@@ -8,10 +8,11 @@
       <title> IT Training Center</title>
       <!-- <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    
       <link rel="stylesheet" href="./css/bootstrap.css">
+      <link rel="stylesheet" href="./css/aos.css">
       <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" type="text/css" href="./css/style.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="./css/style.css">
    </head>
    <body  data-spy="scroll" data-target=".navbar" data-offset="50">
       <button id="scroll_btn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
@@ -81,7 +82,7 @@
       <section class="banner">
          <div class="container">
          
-               <div class="header_bottom_text">
+               <div class="header_bottom_text" data-aos="fade-up" >
                   <div class=" banner_text table-cell">
                      <h3>World's Largest Online Training Platform for Professionals</h3>
                      <h2> IT Training Center</h2>
@@ -103,7 +104,7 @@
      <div class="container">
       <div class="row">
          <div class="col-xs-12 col-sm-7 ">
-            <div class="about_text" data-aos="fade-left">
+            <div class="about_text" data-aos="fade-right">
                 <h5>First your Should Know</h5>
                 <h2>About The <span>IT Training</span></h2>               
                 <p>Lorem ips illud nonummy, novum tation et his. Royal scriptaset patrioque scribentur, at pro fugit erts verter emmolestiae, sed et vivendo ali Lorem ipsum eillud nonu here mmy, novum tation et scripta patrioque scriben tur Quisque ligulas ipsum, euismod atras vulputate iltricies. Coordinates for abs po oordi nates for abs positioning the closest position.</p>
@@ -111,7 +112,7 @@
             </div>
          </div>
          <div class="col-xs-12 col-sm-5 ">
-            <div class="about_img" data-aos="fade-right">
+            <div class="about_img" data-aos="fade-left">
               <img src="./img/about_studio_img_1.jpg" alt="about_studio_img_1" class="about_studio_img_1 img-responsive">
               <!-- <img src="./img/about_studio_img_2.png" alt="about_studio_img_1" class="about_studio_img_2 img-responsive" data-aos="fade-right"> -->
            </div>
@@ -377,7 +378,7 @@
    <div class="container">
       <div class="row">
          <div class="col-md-4">
-            <div class="upcoming-bx">
+            <div class="upcoming-bx" data-aos="fade-right">
                <div class="upcoming-part1">
                  <img src="./img/pick3.png" alt=""> 
                </div>
@@ -390,7 +391,7 @@
             </div>
          </div>
          <div class="col-md-4">
-            <div class="upcoming-bx">
+            <div class="upcoming-bx" data-aos="zoom-in">
                <div class="upcoming-part1">
                  <img src="./img/pick2.png" alt=""> 
                </div>
@@ -403,7 +404,7 @@
             </div>
          </div>
          <div class="col-md-4">
-            <div class="upcoming-bx">
+            <div class="upcoming-bx" data-aos="fade-left">
                <div class="upcoming-part1">
                  <img src="./img/pick4.png" alt=""> 
                </div>
@@ -528,8 +529,19 @@
 </footer>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-      <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>  
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="js/aos.js"></script> 
       <script src="js/owl.carousel.min.js"></script>
-      <script src="./js/custom.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         AOS.init();
+AOS.init({
+  duration: 1500,
+  once: true,
+  easing: 'linear',
+//   disable: 'mobile',
+});
+      </script>
    </body>
 </html>

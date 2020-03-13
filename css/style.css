@@ -476,7 +476,7 @@ font-weight: 600;
 
 
 .Commitment_bg {
-	background: linear-gradient(rgba(21, 56, 122, 0.5), rgba(21, 56, 122, 0.5)), url(../img/background.png);
+	background-color: #E0E5EC;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 615px;
@@ -495,7 +495,6 @@ font-weight: 600;
 
 .Commitment_bg h2 {
 	font-size: 36px;
-	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 60px;
@@ -507,7 +506,7 @@ font-weight: 600;
 	background-color: #fff;
 	overflow: hidden;
 	margin: 0 auto;
-	box-shadow: 0px 0px 10px rgba(21, 56, 122, 0.5);
+	box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
 	transition: 0.5s all;
 }
 .box:hover .boxing_img img{
@@ -607,7 +606,7 @@ font-weight: 600;
 .upcoming-bg{
 	padding: 100px 0px;
 	position: relative;
-	background-color: #f1f1f1;
+	background-color: #E0E5EC;
 	border-top:1px solid rgba(51, 51, 51, 0.247) ;
 	border-bottom:1px solid rgba(51, 51, 51, 0.247) ;
 }
@@ -623,27 +622,33 @@ font-weight: 600;
 	font-size: 30px;
 }
 .upcoming-bx{
-	position: relative;
-	max-width: 350px;
-	margin: 0 auto;
-	/* border: 2px solid #333; */
-	padding: 10px;
-	border-radius: 10px;
-	transition: 0.3s all;
-	border: 1px solid #fff;
+    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
+    /* border: 2px solid #333; */
+    padding: 10px;
+    background-color: #E0E5EC;
+    border-radius: 10px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
+    transition: 0.3s all;
+    /* border: 1px solid #fff; */
 
 }
-.upcoming-bx:hover{
+/* .upcoming-bx:hover{
 	box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.212);
 	border: 1px solid #fff;
-}
+} */
+
 .upcoming-part1 img{
 	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 50px;
 }
 .upcoming-part2{
 	position: relative;
 	padding: 20px;
-	background: #fff;
+	/* background: #fff; */
 }
 .upcoming-text-tit{
 font-size: 22px;
@@ -815,7 +820,7 @@ color: #f77221;
 /*carousel slider end*/
 
 .chat_form-bg {
-	background: url(../img/form_bg_icon1.png) 70% 20%, url(../img/form_bg_icon2.png) bottom center, #15387a;
+	background: url(../img/form_bg_icon2.png) bottom center, #15387a;
 	padding: 78px 0px;
 	text-align: center;
 	background-repeat: no-repeat;
@@ -1188,8 +1193,6 @@ font-size: 35px;
   }
   
   .register {
-	width: 80%;
-	min-width: 300px;
 	margin: 0 auto;
 	position: relative;
 	background: rgb(0, 0, 0, .8);
@@ -1277,7 +1280,6 @@ font-size: 35px;
 	position: absolute;
 	max-width:400px;
 	width: 100%;
-	
 	top: -4px;
 	right: 0;
 	overflow: auto;
@@ -1287,6 +1289,7 @@ font-size: 35px;
 	margin: 0 auto;
 	border-radius: 4px;
 	padding-left: 5px;
+	/* display: none; */
   }
   #messageCpass{
 	max-width: 150px;
@@ -1455,6 +1458,7 @@ font-size: 35px;
 	.menuhover .closebtn{
 		display: block;
 	}
+	
 	.banner_text h2 {
 		font-size: 40px;
 	}
@@ -1529,6 +1533,7 @@ font-size: 35px;
 	}
 	.banner_btn{
 		margin-right: 0;
+		margin-bottom: 10px;
 	}
 	.res_quote {
 		display: inline-block;
@@ -1647,6 +1652,9 @@ font-size: 35px;
 	}
 	.footer_col1 {
 		text-align: center;
+	}
+	.login {
+		width: 100%;
 	}
 }
 @media(max-width:576px) {
