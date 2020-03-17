@@ -228,5 +228,3 @@ document.getElementById('mobileerror').innerHTML = "**Please enter your Mobile n
 return false;
 }
 }
-
-
